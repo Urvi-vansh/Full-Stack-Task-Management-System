@@ -1,0 +1,25 @@
+.form-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-breadcrumb {
+  margin-bottom: 1.25rem;
+}
+
+.breadcrumb-link {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary-600);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.breadcrumb-link:hover {
+  color: var(--primary-800);
+}
+
+.form-page-header {
+  margin-bottom: 1.75rem;
+}

@@ -1,0 +1,33 @@
+.tasks-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.tasks-page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.tasks-search-section {
+  margin-bottom: 1rem;
+}
+
+.tasks-meta-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.results-count {
+  font-size: 0.85rem;
+  color: var(--slate-600);
+}
+
+.results-count strong {
+  color: var(--slate-900);
+}

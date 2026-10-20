@@ -1,0 +1,149 @@
+.lifecycle-card {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: #f8fafc;
+  border: 1px dashed var(--primary-300);
+}
+
+.lifecycle-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.lifecycle-header:hover {
+  background-color: var(--primary-50);
+}
+
+.lifecycle-header-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.lifecycle-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background-color: var(--primary-100);
+  color: var(--primary-700);
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.lifecycle-heading {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--slate-800);
+}
+
+.lifecycle-toggle-btn {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--primary-600);
+}
+
+.lifecycle-body {
+  padding: 1.25rem;
+  border-top: 1px solid var(--slate-200);
+  background-color: #ffffff;
+}
+
+.lifecycle-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.lifecycle-metric {
+  background-color: var(--slate-50);
+  border: 1px solid var(--slate-200);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.metric-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--slate-500);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.metric-val {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--primary-700);
+}
+
+.metric-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.lifecycle-log-viewer {
+  background-color: var(--slate-900);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  color: #e2e8f0;
+  font-family: var(--font-mono);
+  font-size: 0.775rem;
+}
+
+.log-viewer-title {
+  color: #94a3b8;
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.lifecycle-log-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.lifecycle-log-entry {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  line-height: 1.4;
+}
+
+.log-time {
+  color: #64748b;
+}
+
+.log-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 0.1rem 0.35rem;
+  border-radius: 3px;
+}
+
+.log-mount .log-badge {
+  background-color: #065f46;
+  color: #a7f3d0;
+}
+
+.log-update .log-badge {
+  background-color: #854d0e;
+  color: #fde68a;
+}
+
+.log-msg {
+  color: #f1f5f9;
+}

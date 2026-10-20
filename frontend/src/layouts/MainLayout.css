@@ -1,0 +1,30 @@
+.layout-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-app);
+}
+
+.layout-body {
+  display: flex;
+  flex: 1;
+  position: relative;
+}
+
+.layout-main {
+  flex: 1;
+  padding: 2rem 2.5rem;
+  overflow-y: auto;
+  max-width: 100%;
+}
+
+.layout-container {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .layout-main {
+    padding: 1.25rem 1rem;
+  }
+}
